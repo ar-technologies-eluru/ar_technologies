@@ -1,5 +1,6 @@
 # Ignore Python bytecode files
 *.pyc
-
+arTechnologies/static/*
+.*
 # Ignore migration files in Django projects
 **/migrations/

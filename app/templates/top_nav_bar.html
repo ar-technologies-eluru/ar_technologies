@@ -1,0 +1,23 @@
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <!-- <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1> -->
+            <img src="static/app/img/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="/" class="nav-item nav-link {% if request.path == '/' %} active {% endif %}">Home</a>
+                <a href="about" class="nav-item nav-link {% if 'about' in request.path %} active {% endif %}">About</a>
+                <a href="service" class="nav-item nav-link {% if 'service' in request.path %} active {% endif %}">Service</a>
+                <a href="admin" class="nav-item nav-link" title="Only for administration">Admin</a>                        
+                <a href="contact" class="nav-item nav-link {% if 'contact' in request.path %} active {% endif %}">Contact</a>
+            </div>
+            <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+            <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a> -->
+        </div>
+
+    </nav>
+
